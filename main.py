@@ -7,7 +7,7 @@ i=1
 
 while chapitre <= 150: 
     page = f'{i:03}' # to get 3 digit because of the URL ex(i=22 so we request 022.jpg )
-    url = "https://www.scan-fr.cc/uploads/manga/solo-leveling/chapters/"+str(chapitre)+"/"+str(page)+".jpg"
+    url = "https://www.scan-fr.cc/uploads/manga+"manga"+chapters/"+str(chapitre)+"/"+str(page)+".jpg"
     r = requests.get(url)
     filename = manga[1:]+str(chapitre)+'_'+page+'.jpg' #the path
     with open(filename, 'wb') as outfile: # To save it
